@@ -2,8 +2,8 @@
 This package was issued when launch: roslaunch ur_gazebo ur5.launch
 With the content of as below: 
 <br><br><br>
-huong@huong:~/catkin_ws$ source devel/setup.bash
-huong@huong:~/catkin_ws$ roslaunch ur_gazebo ur5.launch
+huong@huong:~/catkin_ws$ source devel/setup.bash<br>
+huong@huong:~/catkin_ws$ roslaunch ur_gazebo ur5.launch<br>
 ... logging to /home/huong/.ros/log/1fbc3f3e-18bc-11e9-8bfd-bc5ff4c9bc1b/roslaunch-huong-13148.log
 Checking log directory for disk usage. This may take awhile.
 Press Ctrl-C to interrupt
