@@ -124,7 +124,8 @@ If you do not want to fix this issue in an old package just set <legacyModeNS> t
 [spawn_gazebo_model-4] process has finished cleanly
 log file: /home/huong/.ros/log/1fbc3f3e-18bc-11e9-8bfd-bc5ff4c9bc1b/spawn_gazebo_model-4*.log
 Loaded joint_state_controller_ur_gazebo
-<br>
+<br><br><br><br>
+--------------------------
 I'm looking for support from everyone! <br>
 Thank you in advance!
 Sincerely,
