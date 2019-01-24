@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <include file="$(find golf_platform)/launch/sdf_spawn.launch">
+        <arg name="robot_name" value="golf_platform"/>
+        <arg name="x" value="0.0"/>
+        <arg name="y" value="0.0"/>
+        <arg name="z" value="0.0"/>
+        <arg name="roll" value="0"/>
+        <arg name="pitch" value="0"/>
+        <arg name="yaw" value="0"/>
+        <arg name="sdf_robot_file" value="$(find golf_platform)/urdf/golf_platform.sdf"/>
+    </include>
+
+
+</launch>

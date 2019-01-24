@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <param name ="robot_description" command = "cat '$(find golf_platform)/urdf/golf_platform.urdf'"/>
+    <node name="golf_platform" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param robot_description -model golf_platform" />
+
+
+</launch>

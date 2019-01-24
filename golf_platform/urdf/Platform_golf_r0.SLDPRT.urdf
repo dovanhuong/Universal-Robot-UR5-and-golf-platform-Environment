@@ -1,0 +1,43 @@
+<robot
+  name="Platform_golf_r0.SLDPRT">
+  <link
+    name="Platform_golf_r0.SLDPRT">
+    <inertial>
+      <origin
+        xyz="1.0886 -0.14923 0.054595"
+        rpy="0 0 0" />
+      <mass
+        value="14.913" />
+      <inertia
+        ixx="0.144283806432178"
+        ixy="0.00285123419659862"
+        ixz="0.0929467526393184"
+        iyy="1.1827649075768"
+        iyz="-0.000255719659106936"
+        izz="1.26907253092403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Platform_golf_r0.SLDPRT/meshes/Platform_golf_r0.SLDPRT.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Platform_golf_r0.SLDPRT/meshes/Platform_golf_r0.SLDPRT.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
