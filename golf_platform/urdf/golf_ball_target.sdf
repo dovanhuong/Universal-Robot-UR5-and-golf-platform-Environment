@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<sdf version="1.5">
+  <model name="my_target">
+    <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+    <static>false</static>
+    <link name="link">
+      <inertial>
+        <mass>0.376</mass>
+        <inertia>
+          <ixx>0.014583</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.014583</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.002083</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="visual">
+        <geometry>
+          <sphere>
+
+            <radius>0.021335</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>1 1 0 1</diffuse>
+        </material>
+      </visual>
+
+      <collision name="collision">
+        <geometry>
+          <sphere>
+
+            <radius>0.021335</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <bounce>
+            <restitution_coefficient>1</restitution_coefficient>
+            <threshold>0</threshold>
+          </bounce>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+            <torsional>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <contact>
+            <collide_bitmask>0x02</collide_bitmask>
+            <ode>
+              <max_vel>10000</max_vel>
+              <kp>100000000000</kp>
+              <kd>0</kd>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+  </model>
+</sdf>

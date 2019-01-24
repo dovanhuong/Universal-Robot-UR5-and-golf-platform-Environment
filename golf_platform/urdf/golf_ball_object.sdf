@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<sdf version="1.5">
+  <model name="my_cylinder">
+    <allow_auto_disable>false</allow_auto_disable>
+    <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+    <static>false</static>
+    <link name="link">
+      <inertial>
+        <mass>0.0376</mass>
+        <inertia>
+          <ixx>0.0833333 * 0.0376 * (3 * 0.045 * 0.021335 )</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.0833333 * 0.0376 * (3 * 0.045 * 0.021335 )</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.5 * 0.0376  </izz>
+        </inertia>
+      </inertial>
+
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.021335</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <sphere>
+            <radius>0.021335</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <bounce>
+            <restitution_coefficient>1</restitution_coefficient>
+            <threshold>0</threshold>
+          </bounce>
+          <friction>
+            <ode>
+              <mu>0.05</mu> <!-- was 0.05-->
+              <mu2>1</mu2>
+            </ode>
+            <torsional>
+              <ode>
+                <slip>1</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <contact>
+            <collide_bitmask>0x01</collide_bitmask>
+            <ode>
+              <max_vel>10000</max_vel>
+              <kp>100000000000</kp>
+              <kd>0</kd>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <sensor name='my_contact' type='contact'>
+        <contact>
+          <collision>collision</collision>
+        </contact>
+      </sensor>
+    </link>
+  </model>
+</sdf>
